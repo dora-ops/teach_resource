@@ -1,0 +1,343 @@
+//链接
+$main: #FF9800;
+$main2: #FFEFD9;
+$main3: #FFFAF3;
+//成功
+$success: #56C179;
+$success2: #BFE4BF;
+$success3: #F6FFF9;
+//警告
+$warn: #FC9D30;
+$warn2: #FFE9A7;
+$warn3: #FFFAEB;
+//信息
+$info: #31ABFC;
+$info2: #A7DCFF;
+$info3: #F5FBFF;
+//错误
+$error: #FC303A;
+$error2: #FFA39E;
+$error3: #F5FBFF;
+//文字
+$word: #333;
+$word2: #666;
+$word3: #999;
+$word4: #CCC;
+//描边
+$border: #E2E2E2;
+$border1: #EEE;
+//背景
+$bg: #FAFAFA;
+$bg2: #F8F8F8;
+$bg3: #F2F2F2;
+$bg4: #EEE;
+
+
+.fix-top {
+  position: fixed;
+  top: 0;
+  margin-bottom: 0;
+  z-index: 1000;
+  opacity: 0.7;
+}
+
+body {
+  background-color: $bg4;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: $main;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+p,span{
+  margin: 0;
+}
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+input {
+  width: calc(100% - 8px);
+  height: 32px;
+  font-size: 14px;
+  color: $word2;
+  background: #fff;
+  border-radius: 4px;
+  border: 1px solid $border1;
+  padding-left: 8px;
+  outline: none;
+}
+
+input:focus {
+  border: 1px solid $border;
+}
+ul,ol,li{
+  list-style:none;
+  margin: 0;
+  padding:0;
+}
+
+::selection {
+  background: $info2;
+  color: #fff;
+}
+
+/*头部nav*/
+.nav-head-wrap {
+  width: 100%;
+  height: 56px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: #fff;
+  color: $word;
+  .logo-wrap{
+    float: left;
+    width: 318px;
+    height: 56px;
+    img{
+      float: left;
+      width: 48px;
+      height: 48px;
+      line-height: 56px;
+      margin-top: 6px;
+    }
+    h2{
+      float: left;
+      margin: 0 0 0 8px;
+      font-family: monospace;
+      font-size: 24px;
+      line-height: 56px;
+      font-weight: bold;
+    }
+  }
+  .nav-tab-a{
+    width: 1156px;
+    margin: 0 auto;
+    overflow: hidden;
+    //vue当前tab
+    a.router-link-exact-active{
+      box-sizing: border-box;
+      background-color: $main;
+      color: $word;
+    }
+  }
+  .user-wrap{
+    float: right;
+    height: 56px;
+    cursor: pointer;
+    img{
+      float: left;
+      display: block;
+      width: 40px;
+      height: 40px;
+      margin-top: 8px;
+      border-radius: 50%;
+      border:1px solid #EEEEEE;
+    }
+    span{
+      float: left;
+      display: block;
+      width: 70px;
+      height: 56px;
+      margin-left: 8px;
+      line-height: 56px;
+      font-size: 12px;
+      color: #333;
+    }
+    &:hover{
+      background: #eee;
+      .logo-span{
+        color: #ff9800;
+      }
+    }
+  }
+
+  a {
+    display: block;
+    width: 164px;
+    height: 56px;
+    float: left;
+    text-decoration: none;
+    text-align: center;
+    line-height: 56px;
+    font-size: 14px;
+    color: #333;
+
+    &:hover {
+      background-color: $main2;
+      color: $word;
+    }
+  }
+}
+/*二级头部*/
+.second-nav-head-wrap{
+  width: 100%;
+  height: 48px;
+  //*一行默认10个小导航*/
+  a{
+    display: block;
+    float: left;
+    text-align: center;
+    font-size: 14px;
+    width: 117px;  //1170/10
+    height: 48px;
+    line-height: 48px;
+  }
+}
+/*分割线*/
+.splice-bar{
+  width: 100%;
+  height: 4px;
+  margin:32px 0;
+  div{
+    width: 50%;
+    height: 4px;
+    float: left;
+    span{
+      width: 40%;
+      height: 4px;
+      float: right;
+      background: $bg4;
+      display: block;
+      margin-right: 8px;
+    }
+  }
+  div:last-child span{
+    float: left;
+    margin-right: 0;
+    margin-left: 8px;
+  }
+}
+/*面包屑*/
+.location-tips {
+  width: 72px;
+  height: auto;
+  font-size: 12px;
+  line-height: 16px;
+  position: absolute;
+  left: -66px;
+  top: 14px;
+
+  span {
+    width: 72px;
+    height: 24px;
+    display: block;
+    text-align: center;
+    line-height: 24px;
+    background-color: $word;
+    color: #fff;
+    box-shadow: 2px 0 8px $border;
+  }
+}
+
+/*主要内容*/
+.wrapper{
+  margin-top: 56px;
+}
+.content {
+  width: 1170px;
+  min-height: 637px;
+  position: relative;
+  margin: 0 auto 32px auto;
+  border-radius: 4px;
+  background-color: $bg;
+  overflow: hidden;
+}
+
+/*左右偏移*/
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+/*图标*/
+.icon {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+
+.icon-bt_skin {
+  background: url('./font/skin.png') no-repeat;
+  background-size: 100% 100%;
+}
+
+.icon-share {
+  background: url('./font/share.png') no-repeat;
+  background-size: 100% 100%;
+}
+
+.icon-search {
+  background: url('./font/search.png') no-repeat;
+  background-size: 100% 100%;
+}
+
+.icon-link {
+  background: url('./font/link.png') no-repeat;
+  background-size: 100% 100%;
+}
+
+.icon-area-QnA {
+  background: url('./font/help.png') no-repeat;
+  background-size: 100% 100%;
+}
+
+.icon-success {
+  background: url('./font/success.png') no-repeat;
+  background-size: 100% 100%;
+}
+
+.icon-error {
+  background: url('./font/error.png') no-repeat;
+  background-size: 100% 100%;
+}
+
+.icon-load {
+  background: url('./font/load.png') no-repeat;
+  background-size: 100% 100%;
+}
+
+.icon-fail {
+  background: url('./font/fail.png') no-repeat;
+  background-size: 100% 100%;
+}
+
+.icon-warn {
+  background: url('./font/warn.png') no-repeat;
+  background-size: 100% 100%;
+}
+
+.icon-check-selected {
+  background: url('./font/selected.png') no-repeat;
+  background-size: 100% 100%;
+}
+
+.icon-check-unselected {
+  background: url('./font/unselect.png') no-repeat;
+  background-size: 100% 100%;
+}
+
+
+
+
+
+
+
+
+
+
+

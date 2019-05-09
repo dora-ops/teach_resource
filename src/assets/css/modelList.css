@@ -1,0 +1,69 @@
+@charset "UTF-8";
+.file-column {
+  float: left;
+  width: 100%;
+  min-height: 160px;
+  border-bottom: 1px solid #eee; }
+  .file-column a {
+    color: #333; }
+  .file-column a:hover {
+    text-decoration: none;
+    color: #ff9800; }
+
+/*图像*/
+.file-column .file-portal {
+  float: left;
+  margin: 32px 32px 0 16px; }
+
+/*压缩包图像*/
+.res-lg-zip {
+  display: inline-block;
+  background-image: url(../../assets/images/icon-lg.png);
+  width: 84px;
+  height: 84px;
+  background-position: -646px -6px;
+  background-repeat: no-repeat; }
+
+/*评分*/
+.el-rate {
+  width: 140px;
+  float: right; }
+
+.file-column .file-title .file-tit {
+  font-size: 18px;
+  line-height: 32px;
+  max-width: 600px;
+  display: inline-block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden; }
+
+.file-column .file-title {
+  margin-top: 24px;
+  width: 738px;
+  float: left;
+  max-height: 32px; }
+.file-column .file-info {
+  width: 738px;
+  float: left;
+  position: relative; }
+  .file-column .file-info div {
+    line-height: 32px;
+    height: 32px; }
+  .file-column .file-info .two, .file-column .file-info .three {
+    color: #999; }
+  .file-column .file-info .three > span {
+    float: left;
+    margin-left: 16px; }
+    .file-column .file-info .three > span i {
+      float: left;
+      margin-right: 8px;
+      line-height: 32px; }
+    .file-column .file-info .three > span span {
+      float: left;
+      margin-left: 4px;
+      line-height: 32px; }
+  .file-column .file-info .three > span:first-child {
+    margin-left: 0; }
+
+/*# sourceMappingURL=modelList.css.map */

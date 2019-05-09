@@ -1,0 +1,246 @@
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset !important;
+  outline: none;
+}
+
+.r-logo {
+  width: 1000px;
+  height: 70px;
+  margin:0 auto;
+}
+
+.r-logo .i-logo{
+  width: 160px;
+  height: 70px;
+  display: block;
+}
+
+.login-banner {
+  width: 1000px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.login-banner .login-bg {
+  width: 500px;
+  height: 400px;
+
+}
+
+.login-bg img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.login-banner .login-form {
+  width: 400px;
+  height: 350px;
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+
+.login-form .login-tab {
+  padding: 0 20px;
+  font-size: 18px;
+  border-bottom: 1px solid #d6d6d6;
+}
+
+.form {
+  margin: 20px 0 0 50px;
+}
+
+.form .item-fore1, .form .item-fore2 {
+  border: 1px solid #bdbdbd;
+  height: 38px;
+  width: 304px;
+}
+
+.form .item {
+  position: relative;
+  margin-bottom: 20px;
+  z-index: 1;
+}
+
+.form .item .placeholder {
+  position: absolute;
+  left: 50px;
+  top: 10px;
+  line-height: 18px;
+  color: #999;
+  font-size: 14px;
+  -webkit-transition: all .2s ease-out;
+  -moz-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+  opacity: 1;
+}
+
+.form .item .login-label {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 38px;
+  height: 38px;
+  border-right: 1px solid #bdbdbd;
+  background: url("../image/login-icons.png") no-repeat;
+}
+
+.form .item .name-label {
+  background-position: 0 0
+}
+
+.form .item .pwd-label {
+  background-position: -48px 0
+}
+
+.form .itxt {
+  line-height: 18px;
+  height: 18px;
+  border: 0;
+  padding: 10px 0 10px 50px;
+  width: 254px;
+  float: none;
+  overflow: hidden;
+  font-size: 14px;
+  font-family: '\5b8b\4f53', sans-serif;
+  *margin: -1px 0 0;
+}
+
+/*图形验证码*/
+.form .itxt02 {
+  padding: 10px 5px;
+  width: 150px;
+  /*text-align: center;*/
+}
+
+.form .verify-code { /*验证码*/
+  cursor: pointer;
+  width: 90px;
+  height: 33px;
+  vertical-align: middle;
+}
+
+.form .item-vcode .placeholder {
+  left: 25px
+}
+
+.form .item-vcode .itxt02, .form .item-vcode .verify-code {
+  float: left
+}
+
+.form .item-vcode a {
+  display: inline-block;
+  width: 55px;
+  float: left;
+  margin: -3px 0 0 6px;
+}
+
+.form .item-vcode:after {
+  display: block;
+  content: "clear";
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.form #o-authcode.item {
+  border: 0
+}
+
+.form #o-authcode.item .itxt {
+  border: 1px solid #bdbdbd;
+  font-size: 14px;
+  padding: 7px 5px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+/*自动登录*/
+.form .item-fore4 {
+  *float: left;
+  *margin-top: 15px;
+}
+
+.login-form .login-box .safe {
+  position: relative;
+  color: #666;
+  *float: left;
+  *width: 305px;
+}
+
+.login-form .login-box .safe span {
+  margin-right: 15px;
+  *float: left;
+}
+
+.login-form .login-box .safe .forget-pw-safe {
+  position: absolute;
+  *float: right;
+  *position: static;
+  right: 0;
+  top: 0;
+  margin: 0;
+}
+
+/*登录按钮*/
+.form .item-fore5 {
+  margin-bottom: 10px
+}
+
+.login-btn {
+  margin: 0 auto;
+  height: 32px;
+  width: 99%;
+  position: relative;
+}
+
+.login-btn .btn-img {
+  display: block;
+  width: 302px;
+  background: #5599ff;
+  border-radius: 3px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.login-btn .btn-img:hover {
+  text-decoration: none;
+  background: #126d9b;
+}
+
+.btn-img, .button {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.coagent {
+  margin: 26px 0 0 270px;
+  height: auto;
+}
+
+
+.coagent .regist-link {
+  color: #ea4949;
+  font-size: 14px
+}
+
+.coagent .regist-link b {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 22px;
+  height: 22px;
+  overflow: hidden;
+  background: url("../image/login-icons.png") -97px -73px no-repeat;
+  vertical-align: middle;
+  margin-right: 5px;
+}
